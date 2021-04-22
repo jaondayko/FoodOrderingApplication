@@ -1,0 +1,22 @@
+<div>
+    <carousel [images]="images"
+              [loop]="true" 
+              [autoplay]="true" 
+              [autoplayInterval]="2500"
+              [cellsToShow]="3"
+              [overflowCellsLimit]="2"
+              [height]="300">
+    </carousel>
+
+    <p>
+        Welcome! To view the menu, click the Menu button at the top of the page. To place your order, click the Order Online button. Sign up for
+        our customer rewards club to get coupons and special deals sent to your inbox every month!
+    </p>
+
+    <div id="buttonBox">
+        <button mat-raised-button color="primary" [routerLink] = "'/order'">Order Now</button>
+        <button mat-raised-button color="accent">Get Rewards</button>
+    </div>
+
+</div>
+
